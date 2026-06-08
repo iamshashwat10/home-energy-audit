@@ -1,0 +1,271 @@
+{
+  "report_id": "HAR-2024-00147",
+  "audit_date": "2024-09-12",
+  "report_date": "2024-09-18",
+  "auditor_name": "Maria Chen",
+  "auditor_certification": "BPI Building Analyst",
+  "auditing_company": "GreenHome Energy Services",
+
+  "property_details": {
+    "address": "47 Birchwood Lane, Madison, WI 53703",
+    "year_built": 1978,
+    "conditioned_area_sqft": 2150,
+    "stories": 2,
+    "foundation_type": "basement",
+    "wall_construction": "wood frame 2x4",
+    "num_occupants": 3
+  },
+
+  "energy_consumption": {
+    "annual_electricity_kwh": 11240,
+    "annual_gas_therms": 820,
+    "annual_energy_cost_usd": 2380.50,
+    "energy_use_intensity_kbtu_sqft": 68.4,
+    "utility_bills": [
+      {
+        "period_start": "2023-10-01",
+        "period_end": "2023-10-31",
+        "fuel_type": "electricity",
+        "consumption_kwh": 780,
+        "consumption_therms": null,
+        "cost_usd": 109.20
+      },
+      {
+        "period_start": "2023-10-01",
+        "period_end": "2023-10-31",
+        "fuel_type": "natural_gas",
+        "consumption_kwh": null,
+        "consumption_therms": 48,
+        "cost_usd": 62.40
+      }
+    ],
+    "notes": "December and January bills estimated due to a meter outage; gaps filled with 3-year average for those months."
+  },
+
+  "insulation": {
+    "zones": [
+      {
+        "location": "attic",
+        "existing_r_value": 19,
+        "recommended_r_value": 49,
+        "insulation_type": "fiberglass batt",
+        "condition": "fair",
+        "deficiencies_noted": "Multiple gaps around recessed lighting penetrations; some batts compressed near eave baffles."
+      },
+      {
+        "location": "rim joist",
+        "existing_r_value": 0,
+        "recommended_r_value": 15,
+        "insulation_type": null,
+        "condition": "poor",
+        "deficiencies_noted": "Completely uninsulated and air-sealed along entire perimeter."
+      },
+      {
+        "location": "basement walls",
+        "existing_r_value": 11,
+        "recommended_r_value": 15,
+        "insulation_type": "fiberglass batt",
+        "condition": "good",
+        "deficiencies_noted": null
+      }
+    ],
+    "air_sealing_condition": "poor",
+    "blower_door_result_cfm50": 3850,
+    "ach50": 9.2,
+    "llm_summary": "The home's thermal envelope has significant weaknesses. The attic is under-insulated at R-19 versus the recommended R-49, with notable air leakage through lighting penetrations. The rim joist is entirely uninsulated and unsealed, representing the highest-priority improvement. Basement walls are adequate but could be upgraded. Overall air tightness at 9.2 ACH50 is well above the 3–5 ACH50 target for this climate zone."
+  },
+
+  "hvac": {
+    "units": [
+      {
+        "system_type": "gas furnace",
+        "fuel_type": "natural_gas",
+        "brand_model": "Carrier 58CVA",
+        "year_installed": 2004,
+        "rated_efficiency": "80% AFUE",
+        "measured_efficiency": "78% AFUE",
+        "condition": "fair",
+        "last_serviced": "2023-10-05",
+        "deficiencies_noted": "Heat exchanger shows hairline crack; recommend inspection by licensed HVAC technician before next heating season."
+      },
+      {
+        "system_type": "central AC",
+        "fuel_type": "electricity",
+        "brand_model": "Carrier 24ACC636",
+        "year_installed": 2011,
+        "rated_efficiency": "13 SEER",
+        "measured_efficiency": null,
+        "condition": "good",
+        "last_serviced": "2024-05-15",
+        "deficiencies_noted": null
+      }
+    ],
+    "duct_condition": "fair",
+    "duct_leakage_cfm25": 280,
+    "thermostat_type": "programmable",
+    "llm_summary": "The 20-year-old furnace is operating below its rated efficiency and has a potentially hazardous heat exchanger crack requiring immediate professional evaluation. Replacement with a high-efficiency (95%+ AFUE) unit would significantly reduce heating costs. The central AC is in good condition but approaching end of useful life. Duct leakage at 280 CFM25 is moderate; sealing accessible joints in the basement could recover 10–15% of conditioned air."
+  },
+
+  "windows_doors": {
+    "window_groups": [
+      {
+        "orientation": "north",
+        "window_type": "single_pane",
+        "count": 4,
+        "total_area_sqft": 28,
+        "condition": "poor",
+        "has_low_e_coating": false
+      },
+      {
+        "orientation": "south",
+        "window_type": "double_pane",
+        "count": 6,
+        "total_area_sqft": 54,
+        "condition": "good",
+        "has_low_e_coating": true
+      },
+      {
+        "orientation": "east",
+        "window_type": "single_pane",
+        "count": 3,
+        "total_area_sqft": 18,
+        "condition": "fair",
+        "has_low_e_coating": false
+      }
+    ],
+    "exterior_door_condition": "fair",
+    "door_count": 2,
+    "llm_summary": "Seven north- and east-facing single-pane windows account for significant heat loss during Wisconsin winters. Replacement with double-pane Low-E units or addition of interior storm panels would provide noticeable comfort improvements. Exterior door weatherstripping is worn on both doors and should be replaced as a low-cost, high-impact measure."
+  },
+
+  "water_heating": {
+    "heater_type": "storage tank",
+    "fuel_type": "natural_gas",
+    "year_installed": 2012,
+    "rated_efficiency_ef_or_uef": 0.62,
+    "tank_size_gallons": 50,
+    "pipe_insulation_present": false,
+    "condition": "fair",
+    "llm_summary": "The 12-year-old gas storage water heater is approaching end of life (typical lifespan 8–12 years). Its UEF of 0.62 is well below a modern heat pump water heater (UEF ~3.5). When replacement is needed, a heat pump water heater is strongly recommended. In the interim, adding pipe insulation on the first 6 feet of hot and cold connections and reducing the set point to 120 °F would yield modest savings."
+  },
+
+  "appliances_lighting": {
+    "appliances": [
+      {
+        "name": "refrigerator",
+        "year_installed": 2009,
+        "energy_star_certified": false,
+        "estimated_annual_kwh": 780,
+        "condition": "fair",
+        "notes": "Side-by-side model; significantly less efficient than current top-freezer or French-door ENERGY STAR units."
+      },
+      {
+        "name": "clothes dryer",
+        "year_installed": 2015,
+        "energy_star_certified": false,
+        "estimated_annual_kwh": 640,
+        "condition": "good",
+        "notes": "Electric resistance dryer. Heat pump dryer would reduce consumption by ~30%."
+      },
+      {
+        "name": "dishwasher",
+        "year_installed": 2020,
+        "energy_star_certified": true,
+        "estimated_annual_kwh": 260,
+        "condition": "excellent",
+        "notes": null
+      }
+    ],
+    "percent_led_lighting": 45,
+    "llm_summary": "Approximately 55% of lighting is still incandescent or CFL. Completing the LED retrofit is one of the lowest-cost, fastest-payback improvements available. The 15-year-old refrigerator consumes nearly double what a current ENERGY STAR model would use and should be prioritised for replacement."
+  },
+
+  "renewables": {
+    "solar_pv_installed": false,
+    "solar_pv_capacity_kw": null,
+    "solar_pv_annual_production_kwh": null,
+    "solar_suitability_score": 7,
+    "other_renewables": null
+  },
+
+  "recommendations": [
+    {
+      "category": "hvac",
+      "title": "Replace aging gas furnace with high-efficiency model (95%+ AFUE)",
+      "description": "The existing 80% AFUE furnace is 20 years old and has a cracked heat exchanger. Replace with a 96% AFUE two-stage gas furnace. Prior to replacement, have a licensed HVAC technician inspect the heat exchanger for CO risk.",
+      "priority": "high",
+      "estimated_cost_usd": 4200,
+      "estimated_annual_savings_usd": 310,
+      "estimated_annual_savings_kwh": null,
+      "simple_payback_years": 13.5,
+      "available_incentives": "Federal IRA 25C tax credit: 30% up to $600. WE Energies Focus on Energy rebate: up to $200.",
+      "co2_reduction_kg_per_year": 820
+    },
+    {
+      "category": "insulation",
+      "title": "Air seal and insulate attic to R-49",
+      "description": "Dense-pack cellulose blown over existing batts after air-sealing all penetrations (recessed lights, top plates, plumbing chases) with fire-rated spray foam or caulk. Target final R-value of R-49.",
+      "priority": "high",
+      "estimated_cost_usd": 3100,
+      "estimated_annual_savings_usd": 420,
+      "estimated_annual_savings_kwh": 520,
+      "simple_payback_years": 7.4,
+      "available_incentives": "Federal IRA 25C tax credit: 30% up to $1,200. Focus on Energy Home Performance rebate: up to $400.",
+      "co2_reduction_kg_per_year": 610
+    },
+    {
+      "category": "insulation",
+      "title": "Insulate and air seal rim joist with spray foam",
+      "description": "Apply 2-inch closed-cell spray polyurethane foam to the entire rim joist perimeter in the basement. This simultaneously insulates (R-12) and air seals in a single application.",
+      "priority": "high",
+      "estimated_cost_usd": 900,
+      "estimated_annual_savings_usd": 180,
+      "estimated_annual_savings_kwh": 210,
+      "simple_payback_years": 5.0,
+      "available_incentives": "Included in Focus on Energy Home Performance rebate above.",
+      "co2_reduction_kg_per_year": 290
+    },
+    {
+      "category": "windows",
+      "title": "Replace single-pane north and east windows with double-pane Low-E",
+      "description": "Replace 7 single-pane windows (46 sq ft) with ENERGY STAR–certified double-pane Low-E units with U-factor ≤ 0.27 and SHGC ≤ 0.22.",
+      "priority": "medium",
+      "estimated_cost_usd": 8400,
+      "estimated_annual_savings_usd": 310,
+      "estimated_annual_savings_kwh": 380,
+      "simple_payback_years": 27.1,
+      "available_incentives": "Federal IRA 25C tax credit: 30% up to $600 per year for windows.",
+      "co2_reduction_kg_per_year": 430
+    },
+    {
+      "category": "water_heating",
+      "title": "Replace storage tank water heater with heat pump water heater",
+      "description": "Install a 50-gallon heat pump water heater (UEF ~3.5) in the basement to replace the aging gas storage tank. Requires 10 sq ft of clear space and 700+ cubic feet of air volume.",
+      "priority": "medium",
+      "estimated_cost_usd": 1800,
+      "estimated_annual_savings_usd": 280,
+      "estimated_annual_savings_kwh": 2200,
+      "simple_payback_years": 6.4,
+      "available_incentives": "Federal IRA 25C tax credit: 30% up to $2,000. WE Energies rebate: $200.",
+      "co2_reduction_kg_per_year": 520
+    },
+    {
+      "category": "appliances",
+      "title": "Complete LED lighting retrofit",
+      "description": "Replace all remaining incandescent and CFL bulbs with LED equivalents. Approximately 30 fixtures estimated.",
+      "priority": "low",
+      "estimated_cost_usd": 150,
+      "estimated_annual_savings_usd": 95,
+      "estimated_annual_savings_kwh": 680,
+      "simple_payback_years": 1.6,
+      "available_incentives": "We Energies instant-discount LED bulbs at participating retailers.",
+      "co2_reduction_kg_per_year": 290
+    }
+  ],
+
+  "home_energy_score": 4,
+  "hers_index": 112,
+  "executive_summary": "This 1978 two-story home in Madison, WI scored a 4 out of 10 on the DOE Home Energy Score, indicating significant room for improvement. Annual energy costs of $2,381 are driven primarily by an aging, inefficient furnace and a poorly insulated envelope that leaks conditioned air at nearly twice the recommended rate. The six recommendations in this report — led by furnace replacement, attic air sealing/insulation, and rim joist insulation — could collectively reduce annual energy bills by approximately $1,595 and cut CO₂ emissions by over 2,900 kg per year. With available federal tax credits and utility rebates, net implementation costs can be reduced by 20–30%. We recommend addressing the furnace's cracked heat exchanger as an immediate safety priority.",
+  "total_estimated_savings_usd_per_year": 1595,
+  "total_estimated_investment_usd": 18550
+}
